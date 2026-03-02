@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Arnaud Sénégas — Python Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <canvas id="waveCanvas"></canvas>
+  <div class="hero-grid"></div>
+  <div class="hero-line"></div>
+  <div class="hero-tag">Python Developer &nbsp;&nbsp;</div>
+  <div class="hero-name">
+    <span class="ln1">ARNAUD</span>
+    <span class="ln2">SÉNÉGAS</span>
+  </div>
+  <div class="hero-status">
+    <div class="hero-dot"></div>
+    <span class="hero-status-text"><em>Python</em> Developer — France</span>
+    <span class="hero-num">©2026</span>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="section-wrap">
+  <div class="section-heading reveal">WORK<span class="sh-dot"></span></div>
+  <div class="works-list">
+
+    <div class="work-item reveal" data-modal="chess">
+      <span class="work-num">(01)</span>
+      <div class="work-info">
+        <div class="work-title">CHESS MANAGER</div>
+        <div class="work-desc">Application de gestion de tournois d’échecs en CLI. Architecture MVC, algorithme suisse de tournoi, persistance JSON et interface Rich pour un rendu terminal soigné.</div>
+      </div>
+      <div class="work-right">
+        <a class="work-github-btn" href="https://github.com/senegas-arnaud/Chess_Manager" target="_blank" onclick="event.stopPropagation()" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+        <div class="work-tags">
+          <span class="work-tag">Python</span>
+          <span class="work-tag">MVC</span>
+          <span class="work-tag">Algorithm</span>
+          <span class="work-tag">Rich</span>
+          <span class="work-tag">JSON</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-item reveal rd1" data-modal="stream">
+      <span class="work-num">(02)</span>
+      <div class="work-info">
+        <div class="work-title">JUST STREAM IT</div>
+        <div class="work-desc">Interface web de streaming vidéo consommant une API locale. Affichage dynamique des films par catégorie, modal de détail et design responsive avec Tailwind CSS.</div>
+      </div>
+      <div class="work-right">
+        <a class="work-github-btn" href="https://github.com/senegas-arnaud/JustStreamIt" target="_blank" onclick="event.stopPropagation()" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+        <div class="work-tags">
+          <span class="work-tag">HTML5</span>
+          <span class="work-tag">Tailwind</span>
+          <span class="work-tag">JavaScript</span>
+          <span class="work-tag">API REST</span>
+          <span class="work-tag">Fetch</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-item reveal rd2" data-modal="books">
+      <span class="work-num">(03)</span>
+      <div class="work-info">
+        <div class="work-title">BOOKS TO SCRAPE</div>
+        <div class="work-desc">Scraper Python complet du site books.toscrape.com. Extraction de toutes les catégories et livres, nettoyage des données avec Regex et export CSV structuré.</div>
+      </div>
+      <div class="work-right">
+        <a class="work-github-btn" href="https://github.com/senegas-arnaud/Python_scraper" target="_blank" onclick="event.stopPropagation()" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+        <div class="work-tags">
+          <span class="work-tag">Python</span>
+          <span class="work-tag">Requests</span>
+          <span class="work-tag">Regex</span>
+          <span class="work-tag">CSV</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="modal-overlay" id="modal-chess"><div class="modal-box">
+  <div class="modal-header">
+    <div><div class="modal-title">CHESS MANAGER</div><div class="modal-title-bar"></div></div>
+    <button class="modal-close" data-close>ESC / Fermer</button>
+  </div>
+  <div class="modal-screenshots">
+    <div class="modal-screenshot"><img src="data/Chess_Manager/chessmenu.png" alt="Chess Manager - menu"></div>
+    <div class="modal-screenshot"><img src="data/Chess_Manager/chessregister.png" alt="Chess Manager - inscription"></div>
+    <div class="modal-screenshot"><img src="data/Chess_Manager/chessrounds.png" alt="Chess Manager - résultats"></div>
+    <div class="modal-screenshot"><img src="data/Chess_Manager/chessresult.png" alt="Chess Manager - rondes"></div>
+  </div>
+</div></div>
+
+<div class="modal-overlay" id="modal-stream"><div class="modal-box">
+  <div class="modal-header">
+    <div><div class="modal-title">JUST STREAM IT</div><div class="modal-title-bar"></div></div>
+    <button class="modal-close" data-close>ESC / Fermer</button>
+  </div>
+  <div class="modal-screenshots">
+    <div class="modal-screenshot"><img src="data/JustStreamIt/bestrating.png" alt="Just Stream It - page principale"></div>
+    <div class="modal-screenshot"><img src="data/JustStreamIt/modal.png" alt="Just Stream It - sélection genre"></div>
+    <div class="modal-screenshot"><img src="data/JustStreamIt/genreselection.png" alt="Just Stream It - modal film"></div>
+    <div class="modal-screenshot"><img src="data/JustStreamIt/page.png" alt="Just Stream It - meilleurs films"></div>
+  </div>
+</div></div>
+
+<div class="modal-overlay" id="modal-books"><div class="modal-box">
+  <div class="modal-header">
+    <div><div class="modal-title">BOOKS TO SCRAPE</div><div class="modal-title-bar"></div></div>
+    <button class="modal-close" data-close>ESC / Fermer</button>
+  </div>
+  <div class="modal-screenshots">
+    <div class="modal-screenshot"><img src="data/BooksToScrap/bookswebsite.png" alt="Books to Scrape - site cible"></div>
+    <div class="modal-screenshot"><img src="data/BooksToScrap/booksscript.png" alt="Books to Scrape - script"></div>
+    <div class="modal-screenshot"><img src="data/BooksToScrap/booksrunning.png" alt="Books to Scrape - exécution"></div>
+    <div class="modal-screenshot"><img src="data/BooksToScrap/booksresult.png" alt="Books to Scrape - résultat CSV"></div>
+  </div>
+</div></div>
+
+<!-- ABOUT -->
+<section id="about" class="section-wrap">
+  <div class="about-grid-bg"></div>
+  <div class="section-heading reveal">ABOUT<span class="sh-dot"></span></div>
+  <div class="about-grid">
+
+    <div class="about-left reveal rd1">
+      <div class="about-orbit">
+        <div class="orbit-ring r-outer"></div>
+        <div class="orbit-ring r-mid"></div>
+        <div class="orbit-ring r-inner"></div>
+        <div class="orbit-photo">
+          <img src="data/photo/crayon.png" alt="Arnaud Sénégas"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="orbit-photo-placeholder" style="display:none">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+            <span>Photo ici</span>
+          </div>
+        </div>
+        <span class="orbit-kw">ANALYTIQUE</span>
+        <span class="orbit-kw">CRÉATIF</span>
+        <span class="orbit-kw">AUTONOME</span>
+        <span class="orbit-kw">RIGOUREUX</span>
+        <span class="orbit-kw">CURIEUX</span>
+      </div>
+      <p class="about-bio">
+        Développeur <strong>Python</strong>, je construis des solutions
+        <strong>lisibles, maintenables</strong> et qui ont du sens.<br><br>
+        J’aime comprendre les problèmes en profondeur avant d’écrire la première ligne de code —
+        architecture propre, code expressif, résultats concrets.
+      </p>
+    </div>
+
+    <div class="about-right reveal rd2">
+      <div class="section-label">Compétences</div>
+      <div class="skills-list">
+        <div class="skill-item">
+          <span class="skill-name">Python</span>
+          <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:90%"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Django / Flask</span>
+          <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:75%"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">SQL</span>
+          <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:70%"></div></div>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Git</span>
+          <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:75%"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">API REST</span>
+          <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:68%"></div></div>
+          <span class="skill-pct">68%</span>
+        </div>
+      </div>
+      <div class="about-meta">
+        <div class="about-meta-item">
+          <span class="about-meta-key">Formation</span>
+          <span class="about-meta-val">Développeur Python</span>
+        </div>
+        <div class="about-meta-item">
+          <span class="about-meta-key">Localisation</span>
+          <span class="about-meta-val">France</span>
+        </div>
+        <div class="about-meta-item">
+          <span class="about-meta-key">GitHub</span>
+          <span class="about-meta-val">
+            <a href="https://github.com/senegas-arnaud" target="_blank">senegas-arnaud</a>
+          </span>
+        </div>
+        <div class="about-meta-item">
+          <span class="about-meta-key">Contact</span>
+          <span class="about-meta-val">
+            <a href="mailto:arnaud.senegas@hotmail.com">arnaud.senegas@hotmail.com</a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <ul class="footer-links">
+    <li><a href="https://github.com/senegas-arnaud" target="_blank">GitHub</a></li>
+    <li><a href="mailto:arnaud.senegas@hotmail.com">Contact</a></li>
+  </ul>
+  <div class="footer-copy">©2026 Arnaud Sénégas</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
